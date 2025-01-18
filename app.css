@@ -290,7 +290,7 @@
 
   .destaque-vinha {
     width: 100%; /* Usa toda a largura disponível */
-    height: auto; /* Ajusta a altura proporcionalmente */
+    height: 100px; /* Ajusta a altura proporcionalmente */
     font-size: 1.5rem; /* Reduz o tamanho da fonte */
     margin: 10px 0; /* Espaço superior e inferior */
   }
@@ -381,7 +381,7 @@
   }
 
   .header h1 {
-    font-size: 1.8rem; /* Reduz ainda mais o tamanho do título */
+    font-size: 3.5rem; /* Reduz ainda mais o tamanho do título */
   }
 
   .idade {
