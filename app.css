@@ -32,6 +32,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    text-align: center;
   }
   
   .efeito{
@@ -47,6 +48,7 @@
   background-position: center; /* Centraliza a imagem dentro do elemento */
   border: 2px solid #0078a6; /* Azul bebê escuro para mais contraste */
   border-radius: 15px;
+    height: 300px;
   padding: 20px;
   text-align: center;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
