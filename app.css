@@ -41,7 +41,7 @@
   
   .convite,
   .sugestoes {
-    background-image: url("/public/fundo.jpg"); /* Imagem de fundo */
+    background-image: url("public/fundo.jpg"); /* Imagem de fundo */
     background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center; /* Centraliza a imagem dentro do elemento */
@@ -85,7 +85,7 @@
     align-items: center;
     width: 300px; /* Ajustado para ser proporcional ao círculo */
     height: 150px;
-    background: url('/public/img/circulo.png') no-repeat center;
+    background: url('public/img/circulo.png') no-repeat center;
     background-size: contain;
     color: #667b92; /* Define a cor do texto */
     font-weight: bold;
@@ -104,7 +104,7 @@
   .divider {
     width: 100%; /* Ajusta para o tamanho desejado */
     height: 50px; /* Altura da linha decorativa */
-    background: url('/public/img/linha.png') no-repeat center;
+    background: url('public/img/linha.png') no-repeat center;
     background-size: contain; /* Ajusta a imagem ao tamanho disponível */
   }
   
