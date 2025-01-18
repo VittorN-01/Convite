@@ -260,4 +260,9 @@
     
   }
   
-  
+  @media (max-width: 768px) {
+  .convite, .sugestoes {
+    width: 90%; /* Ajusta para caber melhor em telas pequenas */
+    padding: 10px; /* Reduz o padding para manter a proporção */
+  }
+}
