@@ -55,7 +55,6 @@
     position: relative;
     color: #ffffff; /* Texto branco para contraste */
     font-weight: bold; /* Destaca o texto */
-      margin-top: 80px;
   }
   
   .header {
@@ -267,7 +266,7 @@
       margin: 0;
       padding: 0;
       background: linear-gradient(to bottom, white, #A7C7E7);
-      display: block; /* Alinha os itens em coluna para dispositivos móveis */
+      display: flex; /* Alinha os itens em coluna para dispositivos móveis */
       padding: 10px; /* Adiciona espaçamento nas laterais */
     }
   
@@ -277,7 +276,6 @@
       padding: 15px; /* Ajusta o espaçamento interno */
       max-width: 100%; /* Garante que ocupe toda a largura */
       box-sizing: border-box; /* Inclui o padding dentro da largura total */
-    margin-top: 50px;
     }
   
     .header h1 {
@@ -373,6 +371,7 @@
   /* Responsividade para dispositivos muito pequenos (ex: smartphones) */
   @media (max-width: 480px) {
     body {
+        display: flex;
       padding: 5px; /* Ajusta a margem para telas menores */
     }
   
@@ -380,7 +379,6 @@
     .sugestoes {
       width: 100%; /* Usa toda a largura */
       padding: 10px;
-    margin-top: 30px;
     }
   
     .header h1 {
