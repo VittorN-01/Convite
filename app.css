@@ -54,6 +54,7 @@
   position: relative;
   color: #ffffff; /* Texto branco para contraste */
   font-weight: bold; /* Destaca o texto */
+    margin-top: 80px;
 }
   
   .header {
