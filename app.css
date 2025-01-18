@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Alice'; /* Nome da fonte que você vai usar */
+    src: url('public/fonts/Alice.ttf') format('truetype'); /* Caminho para o arquivo e formato */
+  }
+  @font-face {
+    font-family: 'Daydream'; /* Nome da fonte que você vai usar */
+    src: url('public/fonts/daydream.ttf') format('truetype'); /* Caminho para o arquivo e formato */
+  }
+  @font-face {
+    font-family: 'Murecho'; /* Nome da fonte que você vai usar */
+    src: url('public/fonts/Murecho.ttf') format('truetype'); /* Caminho para o arquivo e formato */
+  }
+  @font-face {
+    font-family: 'Luxurious Script'; /* Nome da fonte que você vai usar */
+    src: url('public/fonts/LuxuriousScript.ttf') format('truetype'); /* Caminho para o arquivo e formato */
+  }
+  @font-face {
+    font-family: 'Quicksand'; /* Nome da fonte que você vai usar */
+    src: url('public/fonts/Quicksand.ttf') format('truetype'); /* Caminho para o arquivo e formato */
+  }
+  @font-face {
+    font-family: 'Simonetta'; /* Nome da fonte que você vai usar */
+    src: url('public/fonts/Simonetta.ttf') format('truetype'); /* Caminho para o arquivo e formato */
+  }
+  
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white, #A7C7E7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .efeito{
+    color: #799cc2 !important;
+    font-family: 'Alice', sans-serif !important;
+  }
+  
+  .convite,
+  .sugestoes {
+    background-image: url("/public/fundo.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem dentro do elemento */
+    width: 50%;
+    max-width: 400px;
+    border: 2px solid #0078a6; /* Azul bebê escuro para mais contraste */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    position: relative;
+    color: #ffffff; /* Texto branco para contraste */
+    font-weight: bold; /* Destaca o texto */
+  }
+  
+  .header {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-family: "Luxurious Script", cursive; /* Fonte cursiva */
+    font-size: 50px; /* Aumentado para maior destaque */
+    color: #667b92;
+    margin: 0;
+  }
+  
+  .idade {
+    font-family: 'Simonetta', sans-serif !important; /* Define a fonte "Daydream" */
+    font-size: 40px; /* Ajusta o tamanho do número */
+    color: #667b92; /* Cor para o número */
+    line-height: 1; /* Remove espaçamento vertical extra */
+    margin: 0; /* Remove margem extra */
+  }
+  
+  .destaque-vinha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Ajustado para ser proporcional ao círculo */
+    height: 150px;
+    background: url('/public/img/circulo.png') no-repeat center;
+    background-size: contain;
+    color: #667b92; /* Define a cor do texto */
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o texto dentro do círculo */
+  }
+  
+  .texto { 
+    font-family: 'Alice';
+    font-size: 20px; /* Tamanho ajustado para "anos" */
+    line-height: 1; /* Remove espaçamento adicional */
+    margin: 0; /* Remove qualquer margem */
+  }
+  
+  .divider {
+    width: 100%; /* Ajusta para o tamanho desejado */
+    height: 50px; /* Altura da linha decorativa */
+    background: url('/public/img/linha.png') no-repeat center;
+    background-size: contain; /* Ajusta a imagem ao tamanho disponível */
+  }
+  
+  .linha {
+    width: 2px;
+    height: 60px;
+    background-color: #a6c2e1;
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo da linha */
+    margin: 15px;
+  }
+  
+  .conteudo p,
+  footer p {
+    margin: 10px 0;
+    color: #799cc2; /* Cinza suave */
+    font-size: 18px; /* Aumentado para melhor leitura */
+  }
+  
+  .conteudo h2 {
+    font-size: 32px; /* Aumentado para maior impacto */
+    color: #667b92; /* Azul bebê escuro */
+    margin-bottom: 10px;
+  }
+  
+  .data-hora {
+    border-radius: 10px;  
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+  }
+  
+  .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dia, .marco {
+    color: #0078a6 !important;
+  }
+  
+  .numero {
+    font-size: 60px !important;
+    font-weight: bold;
+    color: #667b92 !important;
+    margin: -15px 15px !important; /* Adiciona um espaçamento inferior maior */
+  }
+  
+  .ano {
+    color: #0078a6 !important;
+  }
+  
+  .hora {
+    color: #0078a6 !important;
+    margin-top: 10px;
+  }
+  
+  .interacao .icone {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 18px; /* Aumentado para equilibrar com o tamanho da fonte */
+    background-color: #0078a6; /* Azul bebê escuro */
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px; /* Aumentado para destaque */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .interacao .icone:hover {
+    background-color: #005f84; /* Azul bebê mais escuro */
+  }
+  
+  .botao-voltar {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px; /* Aumentado para harmonizar com a fonte */
+    background-color: #0078a6; /* Azul bebê escuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Aumentado para melhor leitura */
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #005f84; /* Azul bebê mais escuro */
+  }
+  
+  footer p {
+    margin: 5px 0;
+    color: #555; /* Cinza suave */
+    font-size: 16px; /* Levemente aumentado */
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin: 5px 0;
+    color: #333; /* Cinza */
+    font-size: 18px; /* Aumentado para consistência */
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  .caixa-localizacao {
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    max-width: 300px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .caixa-localizacao:hover {
+    background-color: #e0e0e0; /* Muda a cor do fundo quando o mouse passa por cima */
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    justify-content: center; /* Alinha os itens verticalmente no centro */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  
+  .conteudo .item {
+    display: flex; /* Usando flexbox para alinhar a imagem e o texto na mesma linha */
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    margin-bottom: 5px; /* Espaço entre os itens */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+  }
+  
+  .imagem-presente {
+    width: auto; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    border: #799cc2 solid;
+    border-radius: 25%;
+  }
+  
+  p {
+    margin: 0; /* Remove margens extras ao redor do parágrafo */
+    font-size: 1.2em; /* Tamanho do texto */
+    
+  }
+  
+  

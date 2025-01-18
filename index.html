@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <link rel="shortcut icon" href="public/icon.ico" type="image/x-icon">
+  <title>Convite</title>
+</head>
+<body>
+  <!-- Tela do convite -->
+  <div class="convite" id="convite">
+    <header class="header">
+        <div class="destaque-vinha">
+            <div class="idade">15</div>
+            <span class="texto">Anos</span>
+        </div>          
+      <h1>Livia</h1>
+      <p class="efeito">Venha celebrar comigo meus 15 anos!</p>
+    </header>
+    <section class="conteudo">
+      <div class="divider"></div>
+      <div class="data-hora">
+        <p class="marco">Março</p>
+        <div class="data">
+          <p class="dia">DOM</p>
+          <div class="linha"></div>
+          <p class="numero">09</p>
+          <div class="linha"></div>
+          <p class="hora">18H30</p>
+        </div>
+        <p class="ano">2025</p>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <section class="interacao">
+      <a
+        href="https://api.whatsapp.com/send?phone=+5511910634035&text=Oii! Gostaria de confirmar minha presença no aniversário da Lili! 😁"
+        class="icone"
+        title="Confirmar Presença"
+      >
+        📞
+      </a>
+      <button
+        class="icone"
+        title="Sugestões de Presente"
+        onclick="mostrarSugestoes()"
+      >
+        🎁
+      </button>
+      <a
+        href="https://www.google.com/maps?q=Rua%20Jataizinho,%2027%20-%20Itaquera,%20SP"
+        class="icone"
+        title="Localização"
+      >
+        📍
+      </a>
+    </section>
+    <footer></footer>
+  </div>
+
+  <!-- Tela de sugestões -->
+  <div class="sugestoes" id="sugestoes" style="display: none;">
+    <header class="header">
+      <h1>Sugestões de Presente</h1>
+    </header>
+    <section class="conteudo">
+      <div class="item">
+        <img src="public/img/roupas.jpg" alt="Imagem de roupa" class="imagem-presente" />
+        <p>Tamanho: M - 38</p>
+      </div>
+      <div class="item">
+        <img src="public/img/calcados.jpg" alt="Imagem de calçados" class="imagem-presente" />
+        <p>Tamanho: 37</p>
+      </div>
+      <p><b>Acessórios</b>: Prata 925</p>
+      <p><b>Maquiagens</b>: Claras</p>
+      <p><b>Perfumes e Cremes</b>: Doces</p>
+    </section>
+    <button class="botao-voltar" onclick="voltarParaConvite()">
+      Voltar
+    </button>
+  </div>
+
+  <script>
+    function mostrarSugestoes() {
+      document.getElementById('convite').style.display = 'none';
+      document.getElementById('sugestoes').style.display = 'block';
+    }
+
+    function voltarParaConvite() {
+      document.getElementById('sugestoes').style.display = 'none';
+      document.getElementById('convite').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
