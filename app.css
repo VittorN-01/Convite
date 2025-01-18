@@ -260,81 +260,172 @@
     
   }
   
-  /* Responsividade aprimorada para telas menores */
+  /* Base para dispositivos móveis */
 @media (max-width: 768px) {
   body {
-    display: block; /* Altera para coluna em dispositivos menores */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white, #A7C7E7);
+    display: block; /* Alinha os itens em coluna para dispositivos móveis */
     padding: 10px; /* Adiciona espaçamento nas laterais */
   }
 
   .convite,
   .sugestoes {
-    width: 90%; /* Garante que as divs ocupem quase toda a largura da tela */
-    padding: 15px; /* Mantém o espaçamento proporcional */
-    max-width: none; /* Remove o limite de largura */
+    width: 100%; /* Usando 100% da largura disponível */
+    padding: 15px; /* Ajusta o espaçamento interno */
+    max-width: 100%; /* Garante que ocupe toda a largura */
+    box-sizing: border-box; /* Inclui o padding dentro da largura total */
   }
 
   .header h1 {
-    font-size: 2rem; /* Reduz o tamanho da fonte para se ajustar melhor */
+    font-size: 2rem; /* Reduz o tamanho da fonte para títulos em telas pequenas */
+    margin: 0;
+    padding: 0;
   }
 
   .idade {
-    font-size: 2.5rem; /* Ajusta o tamanho do número */
+    font-size: 2rem; /* Reduz o tamanho da fonte */
   }
 
   .destaque-vinha {
-    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    width: 100%; /* Usa toda a largura disponível */
     height: auto; /* Ajusta a altura proporcionalmente */
-    font-size: 1.5rem; /* Reduz o tamanho do texto */
+    font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    margin: 10px 0; /* Espaço superior e inferior */
   }
 
-  .data-hora {
-    font-size: 3rem; /* Reduz o tamanho do texto da data */
+  .texto {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para parágrafos */
+    margin: 0;
+  }
+
+  .divider {
+    width: 100%; /* Ajusta a linha decorativa para a largura total */
+    height: 30px;
+    background: url('public/img/linha.png') no-repeat center;
+    background-size: contain;
   }
 
   .linha {
-    height: 40px; /* Reduz a altura da linha decorativa */
+    height: 40px;
     margin: 10px;
   }
 
-  .interacao .icone {
-    font-size: 1rem; /* Diminui o tamanho dos botões */
-    padding: 10px 15px; /* Ajusta o padding */
+  .conteudo {
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Alinha os itens no centro */
+    justify-content: center;
+    text-align: center;
   }
 
-  .botao-voltar {
-    font-size: 1rem; /* Reduz o tamanho da fonte */
-    padding: 10px 20px;
+  .conteudo .item {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center;
+    margin-bottom: 15px; /* Espaço entre os itens */
+  }
+
+  .imagem-presente {
+    width: 80%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto;
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+    border: #799cc2 solid;
+    border-radius: 25%;
+  }
+
+  footer p {
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    margin: 10px 0;
   }
 
   footer ul li {
-    font-size: 1rem; /* Ajusta o tamanho da fonte dos itens do rodapé */
+    font-size: 1rem; /* Reduz o tamanho da fonte dos itens */
+    margin-bottom: 8px;
+  }
+
+  .caixa-localizacao {
+    max-width: 100%; /* Garante que a caixa de localização ocupe toda a largura */
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .caixa-localizacao:hover {
+    background-color: #e0e0e0;
+  }
+
+  .interacao .icone {
+    font-size: 1.2rem; /* Ajusta o tamanho dos ícones */
+    padding: 10px 15px;
+    margin: 10px 0;
+  }
+
+  .botao-voltar {
+    font-size: 1.2rem; /* Ajusta o tamanho do botão */
+    padding: 10px 20px;
+    margin-top: 15px;
   }
 }
 
+/* Responsividade para dispositivos muito pequenos (ex: smartphones) */
 @media (max-width: 480px) {
+  body {
+    padding: 5px; /* Ajusta a margem para telas menores */
+  }
+
   .convite,
   .sugestoes {
-    width: 100%; /* Usa toda a largura disponível */
-    padding: 10px; /* Reduz o espaçamento interno */
+    width: 100%; /* Usa toda a largura */
+    padding: 10px;
   }
 
   .header h1 {
-    font-size: 1.5rem; /* Ajusta o título para telas muito pequenas */
+    font-size: 1.8rem; /* Reduz ainda mais o tamanho do título */
   }
 
-  .data-hora {
-    font-size: 2rem; /* Reduz o tamanho do texto ainda mais */
+  .idade {
+    font-size: 1.8rem; /* Ajuste para o número */
   }
 
   .destaque-vinha {
-    font-size: 1.2rem; /* Ajusta o texto dentro do círculo */
+    font-size: 1.3rem; /* Ajusta o tamanho do texto dentro do círculo */
   }
 
-  .botao-voltar,
+  .texto {
+    font-size: 1rem; /* Ajuste para textos mais curtos */
+  }
+
+  .divider {
+    height: 25px; /* Reduz a altura da linha */
+  }
+
+  .linha {
+    height: 35px; /* Ajusta a altura da linha */
+  }
+
+  .conteudo .item {
+    flex-direction: column; /* Organiza tudo em coluna */
+  }
+
+  .imagem-presente {
+    width: 70%; /* Ajusta o tamanho da imagem */
+    margin-bottom: 8px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  footer ul li {
+    font-size: 1rem;
+  }
+
   .interacao .icone {
-    font-size: 0.9rem; /* Diminui ainda mais os botões */
-    padding: 8px 15px;
+    font-size: 1rem; /* Ajusta o tamanho dos ícones */
+  }
+
+  .botao-voltar {
+    font-size: 1rem; /* Reduz o tamanho do botão */
   }
 }
-
