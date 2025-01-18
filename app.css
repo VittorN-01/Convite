@@ -41,7 +41,7 @@
   
   .convite,
   .sugestoes {
-    background-image: url("public/fundo.jpg"); /* Imagem de fundo */
+    background-image: url("/public/fundo.jpg"); /* Imagem de fundo */
     background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-position: center; /* Centraliza a imagem dentro do elemento */
