@@ -260,9 +260,81 @@
     
   }
   
-  @media (max-width: 768px) {
-  .convite, .sugestoes {
-    width: 90%; /* Ajusta para caber melhor em telas pequenas */
-    padding: 10px; /* Reduz o padding para manter a proporção */
+  /* Responsividade aprimorada para telas menores */
+@media (max-width: 768px) {
+  body {
+    display: block; /* Altera para coluna em dispositivos menores */
+    padding: 10px; /* Adiciona espaçamento nas laterais */
+  }
+
+  .convite,
+  .sugestoes {
+    width: 90%; /* Garante que as divs ocupem quase toda a largura da tela */
+    padding: 15px; /* Mantém o espaçamento proporcional */
+    max-width: none; /* Remove o limite de largura */
+  }
+
+  .header h1 {
+    font-size: 2rem; /* Reduz o tamanho da fonte para se ajustar melhor */
+  }
+
+  .idade {
+    font-size: 2.5rem; /* Ajusta o tamanho do número */
+  }
+
+  .destaque-vinha {
+    width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    font-size: 1.5rem; /* Reduz o tamanho do texto */
+  }
+
+  .data-hora {
+    font-size: 3rem; /* Reduz o tamanho do texto da data */
+  }
+
+  .linha {
+    height: 40px; /* Reduz a altura da linha decorativa */
+    margin: 10px;
+  }
+
+  .interacao .icone {
+    font-size: 1rem; /* Diminui o tamanho dos botões */
+    padding: 10px 15px; /* Ajusta o padding */
+  }
+
+  .botao-voltar {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+    padding: 10px 20px;
+  }
+
+  footer ul li {
+    font-size: 1rem; /* Ajusta o tamanho da fonte dos itens do rodapé */
   }
 }
+
+@media (max-width: 480px) {
+  .convite,
+  .sugestoes {
+    width: 100%; /* Usa toda a largura disponível */
+    padding: 10px; /* Reduz o espaçamento interno */
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Ajusta o título para telas muito pequenas */
+  }
+
+  .data-hora {
+    font-size: 2rem; /* Reduz o tamanho do texto ainda mais */
+  }
+
+  .destaque-vinha {
+    font-size: 1.2rem; /* Ajusta o texto dentro do círculo */
+  }
+
+  .botao-voltar,
+  .interacao .icone {
+    font-size: 0.9rem; /* Diminui ainda mais os botões */
+    padding: 8px 15px;
+  }
+}
+
